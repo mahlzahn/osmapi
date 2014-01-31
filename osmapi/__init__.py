@@ -1,3 +1,2 @@
-__version__ = '0.2.24'
-
-from OsmApi import *  # noqa
+__version__ = '0.2.24.1'
+__all__ = ["OsmApi"]

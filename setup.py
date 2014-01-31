@@ -1,15 +1,14 @@
+#!/usr/bin/env python3
 #-*- coding: utf-8 -*-
 
 import codecs
-
 version = __import__('osmapi').__version__
 
 try:
     import pypandoc
     from unidecode import unidecode
     description = codecs.open('README.md', encoding='utf-8').read()
-    description = unidecode(description)
-    description = pypandoc.convert(description, 'rst', format='md')
+
 except (IOError, ImportError):
     description = 'Python wrapper for the OSM API'
 
@@ -20,7 +19,7 @@ setup(
     version=version,
     description='Python wrapper for the OSM API',
     long_description=description,
-    author=u'Etienne Chové',
+    author='Etienne Chové',
     author_email='chove@crans.org',
     maintainer='Stefan Oderbolz',
     maintainer_email='odi@readmore.ch',
