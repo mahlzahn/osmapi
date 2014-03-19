@@ -6,7 +6,7 @@ osmapi
 [![Downloads](https://pypip.in/d/osmapi/badge.png)](https://pypi.python.org/pypi/osmapi/)
 [![License](https://pypip.in/license/osmapi/badge.png)](https://pypi.python.org/pypi/osmapi/)
 
-Python wrapper for the OSM API
+Python wrapper for the OSM API, upgraded for use with Python 3, created with [2to3](http://docs.python.org/3/library/2to3.html)
 
 ## Installation
 
@@ -72,4 +72,6 @@ api.ChangesetClose()
 This project was orginally developed by Etienne Chové.
 This repository is a copy of the original code from SVN (http://svn.openstreetmap.org/applications/utils/python_lib/OsmApi/OsmApi.py), with the goal to enable easy contribution via GitHub and release of this package via [PyPI](https://pypi.python.org/pypi/osmapi).
 
-See also the OSM wiki: http://wiki.openstreetmap.org/wiki/Osmapi
+See also the https://wiki.openstreetmap.org/wiki/Osmapi .
+
+This is a forked version of [metaodi/osmapi](https://github.com/metaodi/osmapi) for Python 2 by [Stefan Oderbolz](https://github.com/metaodi).
